@@ -3,10 +3,10 @@ import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 
 import { AppComponent }        from './app.component';
-import { DashboardComponent }  from './mainPage/dashboard.component';
-import { HeroDetailComponent } from './mainPage/hero-detail.component';
-import { HeroesComponent }     from './mainPage/heroes.component';
-import { HeroService }         from './mainPage/hero.service';
+import { DashboardComponent }  from './components/dashboard.component';
+import { HeroDetailComponent } from './components/hero-detail.component';
+import { HeroesComponent }     from './components/heroes.component';
+import { HeroService }         from './services/hero.service';
 
 import { AppRoutingModule}     from './app-routing.module';
 
