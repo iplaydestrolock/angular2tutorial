@@ -6,6 +6,7 @@ var path = require('path');
 
 module.exports = {
   entry: {
+    'polyfills': './src/polyfills.ts',
     'app': './src/main.ts'
   },
 
@@ -42,12 +43,11 @@ module.exports = {
 
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
-      name: ['app']
+      name: ['app', 'polyfills']
     }),
 
     new HtmlWebpackPlugin({
       template: 'index.html'
-  //    template: path.join(__dirname, '../src/index.html')
     })
   ]
 };
